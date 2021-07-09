@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Campground = require("../models/campground");
-// const cities = require("./cities");
 const ptCities = require("./ptCities")
 
 const {descriptors,places} = require("./seedHelpers")
@@ -32,7 +31,7 @@ const seedDB = async ()=>{
         const camp = new Campground({
             author: "60e5d8bf3d454c0f2af03ab5",
             location: `${ptCities[random1000].name}`,
-            title: `${sample(descriptors)} ${sample(places)}`,
+            title: ` ${sample(places)} ${sample(descriptors)}`,
             geometry: { 
                 type: 'Point',
                 coordinates: [ 
