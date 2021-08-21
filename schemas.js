@@ -1,11 +1,5 @@
 const Joi = require("joi")
 
-
-
-
-
-
-
 module.exports.campgroundSchema  = Joi.object({
 
     title:Joi.string().required(),
