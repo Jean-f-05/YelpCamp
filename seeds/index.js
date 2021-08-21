@@ -25,7 +25,7 @@ const sample = array => array[Math.floor(Math.random() * array.length)];
 
 const seedDB = async ()=>{
     await Campground.deleteMany({});
-    for(let i =0; i <200; i++){
+    for(let i =0; i <100; i++){
         const random1000 = Math.floor(Math.random()*500);
         const price = Math.floor(Math.random()*20)+10
         const camp = new Campground({
@@ -40,12 +40,12 @@ const seedDB = async ()=>{
             ]},
             images: [
                 {
-                    "url" : "https://res.cloudinary.com/dqyywhwcg/image/upload/v1625232618/YelpCamp/y3lu9al3l91wxhmddqeb.jpg",
-                    "filename" : "YelpCamp/y3lu9al3l91wxhmddqeb"
+                    "url" : "https://res.cloudinary.com/dqyywhwcg/image/upload/v1629557548/YelpCamp/w10qwccxrov6uqc2tvmo.jpg",
+                    "filename" : "YelpCamp/w10qwccxrov6uqc2tvmo"
                 },
                 {
-                    "url" : "https://res.cloudinary.com/dqyywhwcg/image/upload/v1625237760/YelpCamp/random_ldwauq.jpg",
-                    "filename" : "YelpCamp/kyocvm4f5d313ew8mc2s"
+                    "url" : "https://res.cloudinary.com/dqyywhwcg/image/upload/v1629557499/YelpCamp/wje3k46oct2b98toz3yc.jpg",
+                    "filename" : "YelpCamp/wje3k46oct2b98toz3yc"
                 }
             ],
             description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure at labore dicta culpa officia ab aperiam illo possimus dolor quod. Pariatur explicabo quo quae aspernatur dolor molestiae aperiam soluta facilis.",

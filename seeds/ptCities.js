@@ -1,4 +1,4 @@
-const cities = require('cities.json');
+const cities = require('all-the-cities');
 
 
 
@@ -10,8 +10,8 @@ ptCities = ptCities.map(item =>{
     return {
         country:item.country,
         name:item.name,
-        latitude:item.lat,
-        longitude: item.lng
+        latitude:item.loc.coordinates[1],
+        longitude: item.loc.coordinates[0]
     }
 });
 
