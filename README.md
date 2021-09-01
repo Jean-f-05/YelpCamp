@@ -20,7 +20,7 @@ Registration, Authentication and a couple of options, after login:
 | Option | Description |
 | ------ | ----------- |
 | DB   | Mongo |
-| engine | Node.js |
+| Engine | Node.js |
 | Template Engine    | EJS |
 | Images hosted | Cloudinary |
 
